@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.headerMain {
+  position: relative;
+  background-image: url("images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  margin-top: 150px;
+}
+.piece {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  width: 25%;
+  min-width: 225px;
+  z-index: -1;
+}
+
+.piece img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: rotate 20s infinite ease-in-out;
+}
+
+.searchBarContainer {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #a9a9a9;
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.1s ease-in-out;
+}
+.searchInput:focus {
+  outline: none;
+}
+.searchInput::placeholder {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.searchIcon {
+  background-color: #fff;
+  color: #a9a9a9;
+  padding: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  cursor: pointer;
+  border: 1px solid #a9a9a9;
+  transition: opacity 0.1s ease-in-out;
+  font-size: 1.8rem;
+}
+
+.ctaHeading {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.1s ease-in-out;
+  color: #413b3b;
+}
+
+.scaleSearchBarContainer {
+  transform: scale(1.2);
+}
+.styleSearchInput {
+  color: #413b3b;
+  background-color: white;
+  border-bottom: 1px solid #a9a9a9;
+  border-radius: 0;
+}
+
+.hideSearchIcon {
+  opacity: 0;
+}
+
+.changePlaceholderColor::-webkit-input-placeholder {
+  color: #a9a9a9;
+}
+
+.header {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.contact {
+  margin-right: 5rem;
+}
+
+.follow {
+  margin-right: 1rem;
+  color: #413b3b;
+}
+
+.search {
+  margin-right: 0.4rem;
+  color: #413b3b;
+  font-size: 1.6rem;
+}
+.searchIconNav {
+  color: #413b3b;
+  font-size: 1.6rem;
+}
+.navIcon {
+  color: #413b3b;
+  font-size: 2rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+.searchContainer {
+  cursor: pointer;
+}
+.navRight {
+  display: flex;
+}
+
+.logoContainer .logo {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 4rem;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: bold;
+  color: #413b3b;
+}
+.mobileNavlogo {
+  font-size: 4rem;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: bold;
+  color: #413b3b;
+}
+.mobileNavnavIcon,
+.mobileNavsearch {
+  margin-right: 0.5rem;
+}
+.mobileNavfollow {
+  margin-right: 1rem;
+}
+.mobileNavlogo::first-letter {
+  font-size: 5rem;
+  color: #a9a9a9;
+}
+
+.logo::first-letter,
+.footerContactLogo::first-letter {
+  font-size: 5rem;
+  color: #a9a9a9;
+}
+
+.signIn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #a9a9a9;
+  color: #413b3b;
+  text-decoration: none;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s ease;
+}
+
+.signIn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #a9a9a9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.signIn:hover {
+  color: white !important;
+}
+.signIn:hover::before {
+  transform: translateX(0);
+}
+
+.dishes {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "CannelliniBean Cauliflower BerryBanana"
+    "CannelliniBean RedLentilSoup Asparagus"
+    "GarlickyKale SlowCooker Jambalaya"
+    "ChickenFajita Hummus Jambalaya";
+
+  gap: 10rem 3rem;
+}
+.dish {
+  cursor: pointer;
+}
+
+.dishTitle {
+  color: #413b3b;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#a782585 {
+  grid-area: CannelliniBean;
+  max-height: 400px;
+  align-self: center;
+}
+#a716426 {
+  grid-area: Cauliflower;
+}
+#a715497 {
+  grid-area: BerryBanana;
+}
+#a715415 {
+  grid-area: RedLentilSoup;
+}
+#a716406 {
+  grid-area: Asparagus;
+}
+#a644387 {
+  grid-area: GarlickyKale;
+}
+#a715446 {
+  grid-area: SlowCooker;
+}
+#a782601 {
+  grid-area: Jambalaya;
+  max-height: 400px;
+  align-self: center;
+}
+#a795751 {
+  grid-area: ChickenFajita;
+}
+#a766453 {
+  grid-area: Hummus;
+}
+
+.dishImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.dishesNewest {
+  margin: 10rem auto 25rem auto;
+  display: flex;
+  padding: 0 5%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newDish {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  gap: 2rem 0;
+  padding: 0.8rem;
+}
+
+.newDish img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  clip-path: circle();
+  max-width: 400px;
+}
+
+.newDishesTitle {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20rem auto 2rem auto;
+  color: #413b3b;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+}
+.newDishesTitle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35%;
+  height: 1px;
+  background-color: #a9a9a9;
+  z-index: -1;
+}
+.newDishesTitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 35%;
+  height: 1px;
+  background-color: #a9a9a9;
+  z-index: -1;
+}
+
+.newDishTitle {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #da6c12;
+  display: flex;
+  padding: 8% 3%;
+  justify-content: center;
+  gap: 0 10rem;
+}
+
+.footerNav {
+  display: flex;
+  gap: 0 5rem;
+}
+
+.footerContact {
+  padding: 1rem;
+}
+
+.footerContactLogo {
+  font-size: 4rem;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.footerContactIcon {
+  font-size: 2.4rem;
+  margin-right: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #da6c12;
+  transition: background-color 1s;
+}
+
+.footerNavList {
+  list-style: none;
+  color: #fff;
+}
+.footerNavLink {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+}
+.footerNavLink:hover {
+  opacity: 0.5;
+}
+.footerNavListTitle {
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.cta {
+  width: 100%;
+  background-color: #da6c12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 0 2rem;
+}
+.ctaHead {
+  color: #fff;
+  letter-spacing: 1px;
+}
+.ctaContactInput {
+  padding: 1.2rem;
+  border: none;
+  color: #413b3b;
+  font-family: "Poppins", sans-serif;
+}
+
+.ctaContactInput:focus {
+  outline: none;
+}
+
+.ctaContactInput::placeholder {
+  color: #a9a9a9;
+}
+
+.ctaContactBtn {
+  padding: 1.4rem;
+  border: none;
+  background-color: #a9a9a9;
+  color: #fff;
+  cursor: pointer;
+  margin-left: -2.7px;
+}
+
+.cookThis {
+  width: 95%;
+  max-width: 1000px;
+  margin: 15rem auto;
+  position: relative;
+}
+
+.cookThis img {
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+}
+
+.cookThisNow {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  background-color: #fff;
+  width: 35%;
+  min-width: 375px;
+  height: 70%;
+  padding: 5rem;
+  text-align: center;
+}
+
+.cookThisNow p:first-child {
+  background-color: #da6c12;
+  color: #fff;
+  padding: 1rem 3rem;
+  width: 70%;
+  margin: -7rem auto 2rem auto;
+  font-size: 1.4rem;
+}
+
+.cookThisNow h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #413b3b;
+}
+
+.cooThisNowParagraph {
+  font-size: 1.4rem;
+  color: #413b3b;
+  margin-bottom: 2rem;
+}
+
+.viewRecipe a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #da6c12;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.cookThisNowIcon {
+  color: #da6c12;
+  font-size: 1.4rem;
+}
+.hamburger {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+  display: none;
+}
+
+.burger {
+  width: 24px;
+  height: 3px;
+  background-color: #413b3b;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+.animateBurgers {
+  background-color: #fff;
+}
+.animateBottom {
+  transform: rotate(40deg) translateY(-5px);
+}
+.animateTop {
+  transform: rotate(-40deg) translateY(5px);
+}
+.hideMiddle {
+  display: none;
+}
+
+.mobileNav {
+  height: 100vh;
+  background-color: #da6c12;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 10rem 0 0 7rem;
+  gap: 2rem 0;
+  font-size: 1.8rem;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+}
+.animateMobileNav {
+  transform: translate(0);
+}
+
+.mobileNavsignIn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #a9a9a9;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateLazyLoad {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

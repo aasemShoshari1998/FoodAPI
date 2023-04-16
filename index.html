@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="animateNav.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navContainer">
+        <a href="#" class="signIn">Sign in</a>
+        <div class="logoContainer">
+          <span class="logo">Forkular</span>
+        </div>
+        <div class="navRight">
+          <div class="contact">
+            <span class="follow">Follow</span>
+            <i class="fa-brands fa-square-instagram navIcon"></i>
+            <i class="fa-brands fa-twitter navIcon"></i>
+            <i class="fa-brands fa-facebook navIcon"></i>
+          </div>
+          <div class="searchContainer">
+            <span class="search">Search</span>
+            <i class="fa-solid fa-magnifying-glass searchIconNav"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="hamburger">
+        <div class="burger top"></div>
+        <div class="burger middle"></div>
+        <div class="burger bottom"></div>
+      </div>
+      <nav class="mobileNav hide">
+        <span class="mobileNavlogo">Forkular</span>
+        <div class="mobileNavcontact">
+          <span class="mobileNavfollow">Follow</span>
+          <i class="fa-brands fa-square-instagram mobileNavnavIcon"></i>
+          <i class="fa-brands fa-twitter mobileNavnavIcon"></i>
+          <i class="fa-brands fa-facebook mobileNavnavIcon"></i>
+        </div>
+        <div class="mobileNavsearchContainer">
+          <span class="mobileNavsearch">Search</span>
+          <i class="fa-solid fa-magnifying-glass mobileNavsearchIconNav"></i>
+        </div>
+        <div class="mobileNavsignInContainer">
+          <a href="#" class="mobileNavsignIn">Sign in</a>
+        </div>
+      </nav>
+      <header class="header">
+        <section class="headerMain">
+          <div class="searchBar">
+            <h1 class="ctaHeading">Find A Dish</h1>
+            <div class="searchBarContainer">
+              <input
+                type="text"
+                class="searchInput"
+                placeholder="Search a Dish"
+              />
+              <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+            </div>
+          </div>
+          <div class="piece">
+            <img src="images/4.png" alt="" />
+          </div>
+        </section>
+      </header>
+      <main class="main">
+        <section class="dishes"></section>
+        <h1 class="newDishesTitle">Our Newest Recipes</h1>
+        <section class="dishesNewest"></section>
+      </main>
+      <div class="cta">
+        <h2 class="ctaHead">
+          Get our latest recipes and expert tips right in your inbox
+        </h2>
+        <form class="ctaContact">
+          <input
+            type="email"
+            placeholder="YOUR EMAIL ADDRESS"
+            class="ctaContactInput"
+          />
+          <button type="button" class="ctaContactBtn">SIGN UP</button>
+        </form>
+      </div>
+      <div class="cookThis">
+        <div class="cookThisNow">
+          <p>COOK THIS NOW</p>
+          <h1>Coconut Custard and Rhubarb Tart</h1>
+          <p class="cooThisNowParagraph">
+            Daury-free, flourless, kosher for Passover, and pretty in pink-this
+            rhubarb-topped tart is just the thing for all of your spring
+            celebrations.
+          </p>
+          <div class="viewRecipe">
+            <a href="">VIEW RECIPE</a>
+            <i class="fa-solid fa-circle-right cookThisNowIcon"></i>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footerContact">
+          <h1 class="footerContactLogo">Forkular</h1>
+          <div class="contactIcons">
+            <i class="fa-brands fa-facebook footerContactIcon"></i>
+            <i class="fa-brands fa-square-twitter footerContactIcon"></i>
+            <i class="fa-brands fa-pinterest footerContactIcon"></i>
+            <i class="fa-brands fa-square-tumblr footerContactIcon"></i>
+            <i class="fa-brands fa-youtube footerContactIcon"></i>
+            <i class="fa-brands fa-google-plus footerContactIcon"></i>
+            <i class="fa-brands fa-instagram footerContactIcon"></i>
+            <i class="fa-solid fa-rss footerContactIcon"></i>
+          </div>
+        </div>
+
+        <nav class="footerNav">
+          <ul class="footerNavList">
+            <h2 class="footerNavListTitle">SITE MAP</h2>
+            <li class="footerNavLink">Recipes & Menues</li>
+            <li class="footerNavLink">Expert Advice</li>
+            <li class="footerNavLink">Ingredients</li>
+            <li class="footerNavLink">Holidays & Events</li>
+            <li class="footerNavLink">Video</li>
+          </ul>
+
+          <ul class="footerNavList">
+            <h2 class="footerNavListTitle">HELPFUL LINKS</h2>
+            <li class="footerNavLink">Subscription FAQs</li>
+            <li class="footerNavLink">Contact Us</li>
+            <li class="footerNavLink">Masthead</li>
+            <li class="footerNavLink">Accessibility Help</li>
+            <li class="footerNavLink">Press Center</li>
+            <li class="footerNavLink">Newsletters</li>
+          </ul>
+
+          <ul class="footerNavList">
+            <h2 class="footerNavListTitle">FOOD INNOVATION GROUP</h2>
+            <li class="footerNavLink">The Folkular App</li>
+            <li class="footerNavLink">Bon Appétit</li>
+            <li class="footerNavLink">Forkular</li>
+            <li class="footerNavLink">Gourmet</li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
